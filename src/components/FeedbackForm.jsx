@@ -14,7 +14,7 @@ function FeedbackForm() {
     const [msg,setMsg]=useState(""); 
 
     useEffect(()=>{
-        if(feedbackEdit.edit==true){
+        if(feedbackEdit.edit===true){
             setText(feedbackEdit.fb.text);
             setRating(feedbackEdit.fb.rating);
             setbtnDisabled(false);
